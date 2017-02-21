@@ -19,8 +19,8 @@ app.use(bodyParser.json());
 
 //Routes
 
-app.get('/',requiredAuthentication, (req, res) => {
-    res.render('main', {user: req.session});
+app.get('/', (req, res) => {
+    res.render('index');
 });
 
 
